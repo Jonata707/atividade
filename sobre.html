@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>Portal oficial do turismo brasileiro. Descubra destinos incríveis, cultura rica e
+experiências únicas pelo Brasil. <!-- Metadados da página -->
+    <title>Explore Brasil - Descubra as Maravilhas do Nosso País</title> <!-- /*Título do texto*/ -->
+    <!-- Header da página -->
+     <style>
+        /* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container principal */
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Título principal */
+h1 {
+  font-size: 2em;
+  color: #002776;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Seções bem separadas */
+section {
+  margin-bottom: 40px;
+}
+
+/* Timeline vertical */
+section:first-of-type p {
+  border-left: 4px solid #009739;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+section:first-of-type p::before {
+  content: "🕒";
+  position: absolute;
+  left: -25px;
+  top: 0;
+  font-size: 1.1em;
+}
+
+/* Lista de marcos */
+section:nth-of-type(2) ul {
+  list-style: none;
+  background: #eef3f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-of-type(2) li {
+  margin-bottom: 12px;
+  font-weight: 500;
+  padding-left: 20px;
+  position: relative;
+}
+
+section:nth-of-type(2) li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  color: #009739;
+}
+
+/* Missão, Visão, Valores (exemplo de estrutura futura) */
+.mvv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.mvv article {
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 5px solid #FFDF00;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Equipe com grid de cards */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #002776;
+}
+
+.card h3 {
+  color: #009739;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Estatísticas animadas */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 0;
+}
+
+.stat-box {
+  background: #e8f5e9;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 150px;
+  margin: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.stat-box h2 {
+  font-size: 2em;
+  color: #002776;
+}
+
+.stat-box p {
+  font-size: 0.9em;
+  color: #333;
+}
+
+/* Certificações e prêmios */
+.certificacoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.cert {
+  flex: 1;
+  min-width: 180px;
+  background: #fff8e1;
+  padding: 15px;
+  border-left: 4px solid #FFDF00;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .stats, .certificacoes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+     </style>
+<body>
+    <main>
+     <section>
+        <h1>Timeline de fora crológica sobre o <strong>Brasil</strong>!</h1>
+        <p> 1. Brasil Pré-Cabralino (antes de 1500)
+Antes da chegada dos portugueses, milhões de indígenas já habitavam o território.
+Diversas tribos com culturas, línguas e modos de vida variados.
+Povos como tupi-guaranis, tapuias e povos amazônicos dominavam a terra.
+</p>
+<p> 2. Descobrimento e Colonização (1500–1530)
+1500: Pedro Álvares Cabral chega ao Brasil em 22 de abril.
+Inicialmente, o interesse era extrair pau-brasil (madeira valiosa).
+Os portugueses só passaram a colonizar efetivamente a partir de 1530.</p>
+<p> 3. Período Colonial (1530–1822)
+1530: Primeiras expedições colonizadoras e criação das Capitanias Hereditárias.
+1549: Fundação de Salvador (primeira capital).
+Introdução da cana-de-açúcar e uso de mão de obra escravizada (indígena e africana).
+Século XVII: Invasões holandesas (principalmente no Nordeste).
+Século XVIII: Ciclo do ouro em Minas Gerais.
+Movimentos de resistência como a Inconfidência Mineira (1789).</p>
+<p>4. Independência (1822)
+7 de setembro de 1822: Dom Pedro I proclama a independência do Brasil às margens do Rio Ipiranga.
+O Brasil se torna um Império com Dom Pedro I como imperador.</p>
+<p>5. Império do Brasil (1822–1889)
+1824: Primeira Constituição do Brasil.
+1831: Abdicação de Dom Pedro I em favor de seu filho, Dom Pedro II.
+1870s–80s: Crescimento de movimentos abolicionistas e republicanos.
+13 de maio de 1888: Abolição da escravidão com a Lei Áurea.
+15 de novembro de 1889: Proclamação da República por Marechal Deodoro da Fonseca.</p>
+<p> 6. República Velha (1889–1930)
+Regime marcado por oligarquias (café com leite: São Paulo e Minas).
+Voto censitário (excludente).
+Revoltas populares como a Revolta da Vacina (1904) e Canudos (1896–97).</p>
+<p>7. Era Vargas (1930–1945)
+1930: Getúlio Vargas assume o poder por meio de golpe.
+1937–1945: Estado Novo (regime ditatorial de Vargas).
+Criação de leis trabalhistas e modernização do país.</p>
+<p>8. Período Democrático (1946–1964)
+Redemocratização após a Segunda Guerra.
+Eleições diretas e desenvolvimento industrial.
+Criação da Petrobras (1953).
+Construção de Brasília (1960) por Juscelino Kubitschek.</p>
+<p> 9. Ditadura Militar (1964–1985)
+Golpe militar em 31 de março de 1964.
+Supressão de liberdades, censura e perseguição política.
+Anos de chumbo (1968–1974) com forte repressão.
+Diretas Já e crescente pressão por redemocratização no início dos anos 1980.</p>
+<p> 10. Nova República (1985–presente)
+1985: Fim do regime militar com a eleição de Tancredo Neves (morre antes de assumir; José Sarney toma posse).
+1988: Constituição Cidadã é promulgada.
+Redemocratização com eleições diretas.
+Presidentes eleitos: Collor, Itamar, FHC, Lula, Dilma, Temer, Bolsonaro e Lula (novamente em 2023).
+Avanços sociais, econômicos e também períodos de crise política.</p>
+     </section>
+      
+     <section>
+        <ul>
+            <li>🟢 Resumo dos Principais Marcos</li>
+Ano	Evento
+<li>1500	Descobrimento do Brasil</li>
+<li>1822	Independência do Brasil</li>
+<li>1888	Fim da escravidão</li>
+<li>1889	Proclamação da República</li>
+<li>1930	Início da Era Vargas</li>
+<li>1964	Golpe militar e início da Ditadura</li>
+<li>1988	Constituição Federal (atual)</li>
+<li>1989	Primeiras eleições diretas para presidente</li>
+<li>2023	Início do 3º mandato de Lula</li>
+
+        </ul>
+     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+</body>
+</html>

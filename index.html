@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>Portal oficial do turismo brasileiro. Descubra destinos incríveis, cultura rica e
+experiências únicas pelo Brasil. <!-- Metadados da página -->
+    <title>Explore Brasil - Descubra as Maravilhas do Nosso País</title> <!-- /*Título do texto*/ -->
+    <!-- Header da página -->
+     <style>
+  /* Tipografia geral */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+
+  /* Gradiente no topo */
+  body::before {
+    content: "";
+    display: block;
+    height: 200px;
+    background: linear-gradient(to right, #009739, #002776);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+
+  /* Menu de navegação */
+  nav {
+    background-color: #002776;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: #FFDF00;
+  }
+
+  /* Hero Section */
+  h1 {
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+    font-size: 2.5em;
+  }
+
+  h2 {
+    text-align: center;
+    color: #009739;
+    margin-top: 10px;
+  }
+
+  h3 {
+    text-align: center;
+    color: #002776;
+  }
+
+  /* Parágrafo destaque */
+  p {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-size: 1.1em;
+    color: #333;
+  }
+
+  blockquote {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    margin: 20px auto;
+    background-color: #e1f3e1;
+    border-left: 5px solid #009739;
+    padding: 10px;
+    max-width: 700px;
+  }
+
+  /* Cards das regiões */
+  h3::before {
+    content: "🌎 ";
+  }
+
+  ul,
+  ol,
+  dl {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+
+  ul li,
+  ol li,
+  dl dt,
+  dl dd {
+    margin-bottom: 8px;
+  }
+
+  ul {
+    background-color: #e9f7ef;
+  }
+
+  ol {
+    background-color: #fffde7;
+  }
+
+  dl {
+    background-color: #e3f2fd;
+  }
+
+  dl dt {
+    font-weight: bold;
+    color: #002776;
+  }
+
+  /* Cards simulados para as regiões (simplificados) */
+  img {
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  /* Tabela com zebra striping */
+  table {
+    border-collapse: collapse;
+    margin: 40px auto;
+    width: 95%;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+
+  thead {
+    background-color: #002776;
+    color: white;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+
+  tfoot {
+    background-color: #009739;
+    color: white;
+    text-align: center;
+  }
+
+  /* Formulário */
+  form {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: #009739;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #007b2f;
+  }
+
+  /* Links */
+  a {
+    color: #002776;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Mídia e responsividade */
+  audio, video {
+    display: block;
+    margin: 20px auto;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    table, thead, tbody, th, td, tr {
+      font-size: 0.9em;
+    }
+
+    img {
+      width: 90%;
+      height: auto;
+      display: block;
+      margin: 10px auto;
+    }
+  }
+</style>
+</head>
+<body>
+    <nav>
+         <a href="./destinos.html">Destino</a>
+         <a href="./sobre.html">Sobre nós</a>
+         <a href="./contato.html">Fale conosco!</a>
+      </nav>
+      <!-- Local para nos conhecer melhor e entar em contato conosco! -->
+    <h1>Explore Brasil: Sua Jornada Começa Aqui</h1>
+    <h2>Destinos que Encantam o Mundo</h2>
+    <h3> Região Norte, Região Nordeste, Região Centro-Oeste, Região Sudeste, Região Sul</h3>
+    <p>Seja bem vindo ao Explore Brasil, nele verá como o <strong>Brasil</strong> é incrível, mostraremos sua <em>diversidade</em>, sua <em>cultura</em> e sua <em>natureza</em>. <strong>O Brasil oferece uma vasta gama de experiências turísticas, desde suas belas praias e paisagens naturais até sua rica cultura e história. O turismo doméstico é predominante, com muitos brasileiros viajando para destinos dentro do país, seja para lazer ou para visitar familiares e amigos. O turismo internacional também tem crescido, com o Brasil se consolidando como um destino desejado e atraindo investimentos estrangeiros no setor.</strong>
+    <blockquote> O Brasil é uma nação de muitos, mas com um só coração, pulsando pelo bem comum </blockquote> </p>
+     <ul>Top 5 Destinos Mais Procurados.
+        <li>Rio de Janeiro - Cristo Redentor</li>
+        <li>São Paulo - Diversidade Cultural</li>
+        <li>Salvador - Centro Histórico</li>
+        <li>Foz do Iguaçu - Cataratas</li>
+        <li>Florianópolis - Praias Paradisíacas</li>
+     </ul>
+     <!-- Informações sobre os locais mais procurados no quesito turismo! -->
+     <ol>Passos para Planejar sua Viagem.
+        <li>Escolha seu destino</li>
+        <li>Defina o orçamento</li>
+        <li>Reserve hospedagem</li>
+        <li>Compre passagens</li>
+        <li>Prepare a documentação</li>
+     </ol>
+     <!-- Planejamento para ir ate seu destino  -->
+     <dl>Glossário para Turismo.
+        <dt>Ecoturismo:</dt>
+        <dd>forma de turismo responsável que ocorre em áreas naturais, com o objetivo de conservar o meio ambiente, promover o bem-estar das populações locais e proporcionar experiências educativas e interpretativas.</dd>
+        <dt>Turismo Cultural :</dt>
+        <dd>viagens motivadas pela experiência e conhecimento da cultura de um lugar, incluindo seu patrimônio histórico, artístico, arquitetônico, tradições, gastronomia, entre outros.</dd>
+         <dt>Turismo de Aventura:</dt>
+        <dd>é um segmento turístico focado em atividades recreativas que envolvem certo grau de desafio físico e contato com a natureza, geralmente em ambientes naturais.</dd>
+     </dl>
+     <!-- Informações sobre o que irá estará presente nas viagens! -->
+     <table>
+     <caption>Informações Turísticas por Região</caption>
+     <thead>
+        <tr>
+            <th>Região</th>
+            <th>Capital</th>
+            <th>Atração Principal</th>
+            <th>Melhor Época</th>
+        </tr>
+     </thead>
+
+     <tbody>
+        <tr> 
+            <td>Nordeste</td>
+            <td>Natal</td>
+            <td>Carnaval e Festa Junina</td>
+            <td>Setembro a Fevereiro.</td>
+        </tr>
+        <tr>
+            <td>Norte</td>
+            <td>Manaus</td>
+            <td>Teatro Amazonas</td>
+            <td>Julho a Setembro </td>
+        </tr>
+
+         <tr>
+            <td>Sudeste</td>
+            <td>Rio de Janeiro</td>
+            <td>Cristo Redentor</td>
+            <td>Abril a Setembro</td>
+        </tr>
+
+         <tr>
+            <td>Sul</td>
+            <td>Santa Catarina</td>
+            <td>Cataratas do Iguaçu</td>
+            <td>Outubro a Março</td>
+         </tr>
+                  <tr>
+            <td>Centro-Oeste</td>
+            <td>Brasília</td>
+            <td>Chapada dos Veadeiros</td>
+            <td>Maio a Setembro</td>
+         </tr>
+     </tbody>
+    <tfoot>
+          <tr>
+            <td colspan="4">
+               <strong>Fonte:</strong>Retirada por Gemini IA.
+            </td>
+          </tr>
+    </tfoot>
+     </table>
+     <!-- Tabela mostrando mais específicamente o que há de importante em cada regiáo de forma resumida -->
+     <img src="img/32514.jpeg" alt="Imagem de Carnaval no Nordeste" title="Imagem de Carnaval no Nordeste" width="300px">
+     <img src="img/1200px-Teatro_amazonas.jpg" alt="Imagem do teatro Amazonas" title="Imagem do teatro Amazonas" height="200px">
+     <img src="img/download.jpg" alt="Imagem do Cristo Redentor" title="Imagem do Cristo Redentor" height="200px">
+     <img src="img/images.jpg" alt="Imagem da Cataratas do Iguaçu" title="Imagem da Cataratas do Iguaçu" width="300px">
+     <img src="img/chapada-dos-veadeiros-brasilia-capa1-820x458.jpg" alt="Imagem do Chapada dos Veadeiros" width="350px">
+     <!-- Imagens sobre os lugfares turísticos mais procurados de cada região -->
+
+      <audio controls> 
+         <audio src="https://edube.org/uploads/media/default/0001/04/track1.mp3"></audio>
+         Seu browser não foi compatível para reproduzir este aúdio.
+      </audio controls>
+      <!-- Aúdio mostrando uma música brasileira -->
+      <video controls>
+      <video src="https://example.com/purchase-tickets-harmony-heights-orlando"></video>
+         Seu browser não foi compatível para reproduzir este vídeo.
+      </video controls>
+      <!-- Vídeo sobre o Brasil no turismo -->
+       
+         <p>Caso esteja interessado em saber mais, entre no site oficial do Ministério do Turismo.</p>
+         <a href="www.brasil.gov.br">Clique aqui</a>
+         <!-- Link que leva o usuário ate o Ministério do Turismo -->
+         
+       
+     
+       <form action="">
+         <label for="Nome Completo">Nome Completo</label>
+         <input type="text">
+         <br>
+         <label for="Email">Email</label>
+         <input type="email">
+         <br>
+         <label for="Telefone">Telefone</label>
+         <input type="tel">
+         <br>
+         <label for="Mensagem">Mensagem</label>
+         <input type="text">
+         <label for="Enviar"></label>
+         <br>
+         <button>Enviar</button>
+       </form>
+       <!-- Parte para se cadastrar e aproveitar sua viagem! -->
+        <footer>Criado Por Jonata Gabriel.</footer>
+   </body> 
+</html>

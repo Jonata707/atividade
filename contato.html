@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>Portal oficial do turismo brasileiro. Descubra destinos incríveis, cultura rica e
+experiências únicas pelo Brasil. <!-- Metadados da página -->
+    <title>Explore Brasil - Descubra as Maravilhas do Nosso País</title> <!-- /*Título do texto*/ -->
+    <!-- Header da página -->
+     <style>
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Layout principal */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Informações de contato */
+section:first-of-type {
+  flex: 1;
+  min-width: 280px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section:first-of-type h1 {
+  color: #002776;
+  margin-bottom: 15px;
+}
+
+section:first-of-type p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+section:first-of-type p::before {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+fieldset {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  border: 2px solid #009739;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+legend {
+  font-weight: bold;
+  color: #002776;
+  padding: 0 10px;
+}
+
+/* Labels e inputs */
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus nos campos */
+input:focus,
+select:focus {
+  border-color: #009739;
+  box-shadow: 0 0 5px rgba(0, 151, 57, 0.5);
+  outline: none;
+}
+
+/* Botões */
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #002776;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0040a0;
+}
+
+/* Validação visual */
+input:invalid {
+  border-color: #d93025;
+  background-color: #ffe6e6;
+}
+
+/* Personalização de radio e checkbox (caso adicionado no futuro) */
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #FFDF00;
+}
+
+/* Select dropdown */
+select {
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* Hover em elementos interativos */
+input:hover,
+select:hover {
+  border-color: #FFDF00;
+}
+
+/* Ícones visuais usando pseudo-elementos (opcional, se não tiver emojis) */
+p:nth-child(2)::before {
+  content: "📞";
+}
+
+p:nth-child(3)::before {
+  content: "📩";
+}
+
+
+     </style>
+<body>
+    <main>
+       
+        <section>
+          <h1>Informações de contato</h1>
+          <p>(84) 9 8899-9988</p>
+          <p> explorebrasil@gmail.com</p>
+          <p>Para mais informações, entre em contato para ficar por dentro e conhecer os pontos turísticos do <strong>Brasil</strong>!</p>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Entre em contato</legend>
+             <form action="post">
+         <label for="Nome Completo">Nome Completo</label>
+         <input type="text">
+         <br>
+         <label for="Email">Email</label>
+         <input type="email">
+         <br>
+         <label for="Telefone">Telefone</label>
+         <input type="tel">
+         <br>
+         <label for="Mensagem">Mensagem</label>
+         <input type="text">
+         <label for="Enviar"></label>
+         <br>
+         <button>Enviar</button>
+         <section>
+         <label for="estado">Estado</label>
+        <select name="estado" id="estado">
+            <option value=""> Selecione o Estado que deseja:</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="AM">Amazonas</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="RS">Rio Grande do Sul</option>
+       </select>
+         </section>
+       </form>
+
+        
+       </fieldset>
+       
+
+        </section>
+    </main>
+         
+       
+</body>
+</html>
