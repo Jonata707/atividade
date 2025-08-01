@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>Portal oficial do turismo brasileiro. Descubra destinos incríveis, cultura rica e
+experiências únicas pelo Brasil. <!-- Metadados da página -->
+    <title>Explore Brasil - Descubra as Maravilhas do Nosso País</title> <!-- /*Título do texto*/ -->
+    <!-- Header da página -->
+     <style>
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia hierárquica */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #003366;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #004d40;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #00695c;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+/* Navegação */
+nav {
+  background-color: #00796b;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Layout em grid para regiões */
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+
+/* Cores por região */
+section:nth-of-type(1) { background: linear-gradient(135deg, #fdd835, #fbc02d); padding: 20px; }
+section:nth-of-type(2) { background: linear-gradient(135deg, #ff7043, #f4511e); padding: 20px; }
+section:nth-of-type(3) { background: linear-gradient(135deg, #4db6ac, #00796b); padding: 20px; }
+section:nth-of-type(4) { background: linear-gradient(135deg, #64b5f6, #1976d2); padding: 20px; }
+section:nth-of-type(5) { background: linear-gradient(135deg, #81c784, #388e3c); padding: 20px; }
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Imagens com zoom e bordas */
+img {
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+  max-width: 100%;
+  height: auto;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Tabela responsiva */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #2196f3;
+  color: white;
+}
+
+tfoot {
+  background-color: #eeeeee;
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td::before {
+    position: absolute;
+    left: 10px;
+    content: attr(data-label);
+    font-weight: bold;
+  }
+}
+
+/* Botões */
+button, .btn {
+  background: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+button:hover, .btn:hover {
+  background: #e64a19;
+}
+
+/* Accordion / Tabs simples */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  border-radius: 0 0 6px 6px;
+}
+
+/* Preços destacados */
+.price {
+  font-size: 1.5em;
+  color: #e53935;
+  font-weight: bold;
+}
+
+/* Estilização do áudio e vídeo */
+audio, video {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: #212121;
+  color: white;
+  font-weight: bold;
+}
+
+/* Links */
+a {
+  color: #1e88e5;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+</style>
+
+     
+</head>
+<body>
+    <nav>
+         <a href="./destinos.html">Destino</a>
+         <a href="./sobre.html">Sobre nós</a>
+         <a href="./contato.html">Fale conosco!</a>
+      </nav>
+    <h1><strong>Esta é a página do destino, seja bem vindo e aproveite!. </strong></h1>
+      <!-- Local para nos conhecer melhor e entar em contato conosco! -->
+    <h1>Explore Brasil: Sua Jornada Começa Aqui</h1>
+    <h2>Destinos que Encantam o Mundo</h2>
+    <h3> Região Norte, Região Nordeste, Região Centro-Oeste, Região Sudeste, Região Sul</h3>
+    <p>Seja bem vindo ao Explore Brasil, nele verá como o <strong>Brasil</strong> é incrível, mostraremos sua <em>diversidade</em>, sua <em>cultura</em> e sua <em>natureza</em>. <strong>O Brasil oferece uma vasta gama de experiências turísticas, desde suas belas praias e paisagens naturais até sua rica cultura e história. O turismo doméstico é predominante, com muitos brasileiros viajando para destinos dentro do país, seja para lazer ou para visitar familiares e amigos. O turismo internacional também tem crescido, com o Brasil se consolidando como um destino desejado e atraindo investimentos estrangeiros no setor.</strong>
+    <blockquote> O Brasil é uma nação de muitos, mas com um só coração, pulsando pelo bem comum </blockquote> </p>
+     <ul>Top 5 Destinos Mais Procurados.
+        <li>Rio de Janeiro - Cristo Redentor</li>
+        <li>São Paulo - Diversidade Cultural</li>
+        <li>Salvador - Centro Histórico</li>
+        <li>Foz do Iguaçu - Cataratas</li>
+        <li>Florianópolis - Praias Paradisíacas</li>
+     </ul>
+     <!-- Informações sobre os locais mais procurados no quesito turismo! -->
+     <ol>Passos para Planejar sua Viagem.
+        <li>Escolha seu destino</li>
+        <li>Defina o orçamento</li>
+        <li>Reserve hospedagem</li>
+        <li>Compre passagens</li>
+        <li>Prepare a documentação</li>
+     </ol>
+     <!-- Planejamento para ir ate seu destino  -->
+     <dl>Glossário para Turismo.
+        <dt>Ecoturismo:</dt>
+        <dd>forma de turismo responsável que ocorre em áreas naturais, com o objetivo de conservar o meio ambiente, promover o bem-estar das populações locais e proporcionar experiências educativas e interpretativas.</dd>
+        <dt>Turismo Cultural :</dt>
+        <dd>viagens motivadas pela experiência e conhecimento da cultura de um lugar, incluindo seu patrimônio histórico, artístico, arquitetônico, tradições, gastronomia, entre outros.</dd>
+         <dt>Turismo de Aventura:</dt>
+        <dd>é um segmento turístico focado em atividades recreativas que envolvem certo grau de desafio físico e contato com a natureza, geralmente em ambientes naturais.</dd>
+     </dl>
+     <!-- Informações sobre o que irá estará presente nas viagens! -->
+     <table>
+     <caption>Informações Turísticas por Região</caption>
+     <thead>
+        <tr>
+            <th>Região</th>
+            <th>Capital</th>
+            <th>Atração Principal</th>
+            <th>Melhor Época</th>
+        </tr>
+     </thead>
+
+     <tbody>
+        <tr> 
+            <td>Nordeste</td>
+            <td>Natal</td>
+            <td>Carnaval e Festa Junina</td>
+            <td>Setembro a Fevereiro.</td>
+        </tr>
+        <tr>
+            <td>Norte</td>
+            <td>Manaus</td>
+            <td>Teatro Amazonas</td>
+            <td>Julho a Setembro </td>
+        </tr>
+
+         <tr>
+            <td>Sudeste</td>
+            <td>Rio de Janeiro</td>
+            <td>Cristo Redentor</td>
+            <td>Abril a Setembro</td>
+        </tr>
+
+         <tr>
+            <td>Sul</td>
+            <td>Santa Catarina</td>
+            <td>Cataratas do Iguaçu</td>
+            <td>Outubro a Março</td>
+         </tr>
+                  <tr>
+            <td>Centro-Oeste</td>
+            <td>Brasília</td>
+            <td>Chapada dos Veadeiros</td>
+            <td>Maio a Setembro</td>
+         </tr>
+     </tbody>
+    <tfoot>
+          <tr>
+            <td colspan="4">
+               <strong>Fonte:</strong>Retirada por Gemini IA.
+            </td>
+          </tr>
+    </tfoot>
+     </table>
+     <!-- Tabela mostrando mais específicamente o que há de importante em cada regiáo de forma resumida -->
+     <img src="img/32514.jpeg" alt="Imagem de Carnaval no Nordeste" title="Imagem de Carnaval no Nordeste" width="300px">
+     <img src="img/1200px-Teatro_amazonas.jpg" alt="Imagem do teatro Amazonas" title="Imagem do teatro Amazonas" height="200px">
+     <img src="img/download.jpg" alt="Imagem do Cristo Redentor" title="Imagem do Cristo Redentor" height="200px">
+     <img src="img/images.jpg" alt="Imagem da Cataratas do Iguaçu" title="Imagem da Cataratas do Iguaçu" width="300px">
+     <img src="img/chapada-dos-veadeiros-brasilia-capa1-820x458.jpg" alt="Imagem do Chapada dos Veadeiros" width="350px">
+     <!-- Imagens sobre os lugfares turísticos mais procurados de cada região -->
+
+      <audio controls> 
+         <audio src="https://edube.org/uploads/media/default/0001/04/track1.mp3"></audio>
+         Seu browser não foi compatível para reproduzir este aúdio.
+      </audio controls>
+      <!-- Aúdio mostrando uma música brasileira -->
+      <video controls>
+      <video src="https://example.com/purchase-tickets-harmony-heights-orlando"></video>
+         Seu browser não foi compatível para reproduzir este vídeo.
+      </video controls>
+      <!-- Vídeo sobre o Brasil no turismo -->
+       
+         <p>Caso esteja interessado em saber mais, entre no site oficial do Ministério do Turismo.</p>
+         <a href="www.brasil.gov.br">Clique aqui</a>
+         <!-- Link que leva o usuário ate o Ministério do Turismo -->
+
+         <section>
+            <h1>Informacoes adiconais sobre as regiões do <em>Brasil</em></h1>
+
+            <h2>Informações sobre o Sudeste</h2>
+            <p>A região Sudeste do Brasil é um verdadeiro caldeirão de culturas e pontos turísticos diferentes, com São Paulo, Rio de Janeiro, Minas Gerais e Espírito Santo. Tem tanta coisa legal para ver e fazer que é difícil escolher. Neste artigo, vamos te levar por uma lista com 55 pontos turísticos incríveis da Região Sudeste. Vai ter de tudo: cidades charmosas, praias badaladas e cachoeiras de tirar o fôlego. Selecionamos as melhores atrações, tanto do interior quanto do litoral, que você não pode deixar de conferir na região. </p>
+            <h2>Informacões sobre o Nordeste</h2>
+            <p>Espalhados pelos nove estados da região estão alguns dos mais famosos pontos turísticos do nosso país. É tanta cidade bonita e praias paradisíacas, que provavelmente serão necessárias várias idas para conhecer os principais destinos do Nordeste!</p>
+            <h2>Informações sobre o Norte</h2>
+            <p>Informacoes turisticas sobre o norte
+               A região Norte do Brasil é um verdadeiro tesouro de beleza natural e diversidade cultural. Com uma vasta extensão territorial, abrangendo os estados do Amazonas, Pará, Acre, Roraima e outros, essa região encanta visitantes de todo o mundo com suas paisagens deslumbrantes, sua exuberante fauna e flora, bem como sua rica herança cultural e histórica.</p>
+            <h2 >Informacoes sobre o Sul</h2>
+            <p>Informacoes turisticas sobre o sul
+             A Região Sul do Brasil é um destino turístico riquíssimo, oferecendo uma combinação de paisagens naturais deslumbrantes, cultura rica e gastronomia deliciosa. Entre os principais pontos turísticos estão as famosas Cataratas do Iguaçu, as charmosas cidades da Serra Gaúcha, e as praias paradisíacas em Santa Catarina. O inverno é ideal para explorar a Serra Gaúcha e suas atrações, enquanto o verão é perfeito para aproveitar as praias. A região é facilmente acessível de carro, permitindo explorar áreas mais afastadas e desfrutar de uma experiência única.</p>
+            <h2>Informações sobre o Centro-Oeste</h2>
+            <p>O turismo vem se desenvolvendo rapidamente na região Centro-Oeste do Brasil, atraindo visitantes de várias partes do mundo. A região mais conhecida é o Pantanal, no Mato Grosso e Mato Grosso do Sul. Trata-se da maior planície inundável do mundo e uma das maiores bacias de sedimentação do planeta.[1] Outros pontos de interesse são as chapadas, como a dos Guimarães, em Mato Grosso, e a dos Veadeiros, em Goiás. Há ainda Brasília, no Distrito Federal, marco da arquitetura e urbanismo modernos.</p>
+
+
+</section>
+         
+        <footer>Criado Por Jonata Gabriel.</footer>
+   </body> 
+</html>

@@ -8,51 +8,64 @@ experiências únicas pelo Brasil. <!-- Metadados da página -->
     <title>Explore Brasil - Descubra as Maravilhas do Nosso País</title> <!-- /*Título do texto*/ -->
     <!-- Header da página -->
      <style>
-        /* Reset básico */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corpo da página */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fdfdfd;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
+/* CORES INSPIRADAS NA BANDEIRA DO BRASIL */
+:root {
+  --verde: #009739;
+  --amarelo: #FFDF00;
+  --azul: #002776;
+  --cinza-claro: #f4f4f4;
+  --branco: #ffffff;
+  --preto: #333333;
 }
 
-/* Container principal */
+/* BASE DO SITE */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--branco);
+  color: var(--preto);
+  line-height: 1.6;
+}
+
+/* CONTAINER PRINCIPAL */
 main {
   max-width: 1200px;
   margin: auto;
   padding: 20px;
 }
 
-/* Título principal */
+/* TÍTULOS */
+h1, h2, h3 {
+  text-align: center;
+  color: var(--azul);
+  margin-bottom: 20px;
+}
 h1 {
   font-size: 2em;
-  color: #002776;
-  margin-bottom: 20px;
-  text-align: center;
 }
 
-/* Seções bem separadas */
+/* SEÇÕES */
 section {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  padding: 20px;
+  background-color: var(--cinza-claro);
+  border-radius: 8px;
 }
 
-/* Timeline vertical */
+/* TIMELINE */
 section:first-of-type p {
-  border-left: 4px solid #009739;
+  border-left: 4px solid var(--verde);
   padding-left: 15px;
   margin-bottom: 20px;
   position: relative;
-  animation: fadeInUp 0.5s ease-in-out;
+  animation: fadeInUp 0.6s ease-in-out both;
 }
-
 section:first-of-type p::before {
   content: "🕒";
   position: absolute;
@@ -61,152 +74,165 @@ section:first-of-type p::before {
   font-size: 1.1em;
 }
 
-/* Lista de marcos */
+/* LISTA DE MARCOS */
 section:nth-of-type(2) ul {
   list-style: none;
-  background: #eef3f5;
+  background: var(--branco);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
-
 section:nth-of-type(2) li {
   margin-bottom: 12px;
   font-weight: 500;
-  padding-left: 20px;
+  padding-left: 25px;
   position: relative;
 }
-
 section:nth-of-type(2) li::before {
   content: "✔️";
   position: absolute;
   left: 0;
-  color: #009739;
+  color: var(--verde);
 }
 
-/* Missão, Visão, Valores (exemplo de estrutura futura) */
+/* BLOCOS DE CITAÇÃO */
+blockquote {
+  font-style: italic;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #e8f5e9;
+  border-left: 5px solid var(--amarelo);
+}
+
+/* MISSÃO, VISÃO, VALORES */
 .mvv {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  margin-top: 40px;
 }
-
 .mvv article {
-  background-color: #ffffff;
+  background: var(--branco);
+  border-left: 6px solid var(--verde);
   padding: 20px;
-  border-left: 5px solid #FFDF00;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.mvv article h3 {
+  color: var(--azul);
 }
 
-/* Equipe com grid de cards */
+/* EQUIPE EM GRID */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  margin-top: 40px;
 }
-
 .card {
-  background: white;
+  background: var(--branco);
   border-radius: 10px;
   padding: 20px;
   text-align: center;
   transition: transform 0.3s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
-
 .card:hover {
   transform: translateY(-5px);
 }
-
 .card img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
-  border: 3px solid #002776;
+  border: 3px solid var(--azul);
 }
-
 .card h3 {
-  color: #009739;
+  color: var(--verde);
   margin-bottom: 5px;
 }
-
 .card p {
   font-size: 0.9em;
   color: #666;
 }
 
-/* Estatísticas animadas */
+/* ESTATÍSTICAS COM ANIMAÇÃO */
 .stats {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 40px 0;
+  justify-content: center;
+  gap: 30px;
 }
-
 .stat-box {
-  background: #e8f5e9;
+  background: #e0f2f1;
   padding: 20px 30px;
   border-radius: 10px;
   text-align: center;
   min-width: 150px;
-  margin: 10px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  animation: fadeIn 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out both;
 }
-
 .stat-box h2 {
   font-size: 2em;
-  color: #002776;
+  color: var(--azul);
 }
-
 .stat-box p {
   font-size: 0.9em;
-  color: #333;
+  color: var(--preto);
 }
 
-/* Certificações e prêmios */
+/* CERTIFICAÇÕES E PRÊMIOS */
 .certificacoes {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  margin-top: 30px;
 }
-
 .cert {
-  flex: 1;
-  min-width: 180px;
-  background: #fff8e1;
-  padding: 15px;
-  border-left: 4px solid #FFDF00;
+  background: #fffde7;
+  padding: 15px 20px;
+  border-left: 5px solid var(--amarelo);
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  flex: 1 1 200px;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .stats, .certificacoes {
-    flex-direction: column;
-    align-items: center;
-  }
+/* PARALLAX SIMPLES */
+.parallax {
+  background-image: url('turismo.jpg'); /* Substituir pela imagem real */
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+.parallax h2 {
+  font-size: 2em;
+  text-shadow: 1px 1px 2px #000;
 }
 
-/* Animações */
+/* ANIMAÇÕES */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-     </style>
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .stats, .certificacoes {
+    flex-direction: column;
+    align-items: center;
+  }
+  section {
+    padding: 15px;
+  }
+}
+</style>
+
 <body>
     <main>
      <section>
@@ -278,20 +304,22 @@ Ano	Evento
 
         </ul>
      </section>
+     
+     <section>
+        <h3>Estas são as citações que mais foram marcantes na história do Brasil.</h3>
+        <blockquote>"Se é para o bem de todos e felicidade geral da nação, estou pronto. Diga ao povo que fico."</blockquote>
+        <blockquote>"Viva a independência e a separação do Brasil. Pelo meu sangue, pela minha honra, pelo meu Deus, juro promover a liberdade do Brasil. Independência ou Morte!</blockquote>
+        <blockquote>"Se mil outros tronos eu tivesse, mil tronos eu perderia para por fim à escravidão." - Uma expressão de luta contra a escravidão</blockquote>
+        <blockquote>
+"Brasil: Ame-o ou deixe-o!" - Uma frase que reflete a opinião de que o Brasil deveria ser amado ou abandonado. </blockquote>
+        <blockquote>Quanto a ela, discordar, sim. Divergir, sim. Descumprir, jamais. Afrontá-la, nunca." - Uma frase que reflete a firmeza de um grupo em relação a uma questão.</blockquote>
 
-
-
-
-
-
-
-
-
-
+    </section>
 
 
 
 
     </main>
+     <footer>Página criada por Jonata Gabriel.</footer>
 </body>
 </html>
