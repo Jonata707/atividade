@@ -1,0 +1,55 @@
+/* Tarefa.module.css */
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Container para os botões */
+li button {
+  margin-left: 8px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Botão de editar */
+li button:first-of-type {
+  background-color: #007bff;
+  color: #fff;
+}
+
+li button:first-of-type:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Botão de remover */
+li button:last-of-type {
+  background-color: #ff3b30;
+  color: #fff;
+}
+
+li button:last-of-type:hover {
+  background-color: #d63025;
+  transform: translateY(-2px);
+}
+
+/* Efeito de clique */
+li button:active {
+  transform: scale(0.95);
+}
