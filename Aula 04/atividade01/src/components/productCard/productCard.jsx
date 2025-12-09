@@ -1,0 +1,16 @@
+import React from "react";
+import styles from "./productCard.module.css"
+function ProductCard({img, name, price, description, emPromocao}){
+    return(
+    <>
+    <div className={styles.card}>
+          <img src={img} alt={name}/>
+          <h4>{name}</h4>
+          <p>{description}</p>
+          <h3>{price}</h3>
+          <p>{emPromocao && <span>🔥Promoção!</span>}</p>
+    </div>
+    </>
+    )
+}
+export default ProductCard;

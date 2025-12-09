@@ -1,0 +1,33 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    background-color: cadetblue;
+    padding: 2rem;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px;
+    margin-bottom: 1rem;
+}
+.card img{
+    width: 80%;
+    border-radius: 4rem;
+    margin-bottom: 1rem;
+}
+.card h4 {
+    color: yellow;
+    margin-bottom: 1rem;
+}
+
+.card h3{
+    color: orangered;
+}
+.card p {
+    text-align: justify;
+}
+.card p span{
+    text-align: center;
+    font-size: 2rem;
+    color: darkmagenta;
+    
+}
